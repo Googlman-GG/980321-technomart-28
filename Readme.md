@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [David Ovdienko](https://up.htmlacademy.ru/htmlcss/28/user/980321).
-* Наставник: `Неизвестно`.
+* Наставник: [Серёжа Попов](https://htmlacademy.ru/profile/id42761).
 
 ---
 
