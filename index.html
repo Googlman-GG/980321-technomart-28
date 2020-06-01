@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="../980321-technomart-28/css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="header-top">
         <div class="header-top-container">
-          <div class="logo-container">Техномарт
-            <img src="#" alt="" class="logo-img">
+          <div class="logo-container"><span class="visually-hidden">Техномарт</span>
+            <img src="img/logo-technomart.png" alt="Техномарт" class="logo-img">
           </div>
           <div class="header-search">
             <form action="https://echo.htmlacademy.ru">
@@ -243,7 +244,7 @@
                     <h2 class="bottom-heading-container">Кредит</h2>
                     <p class="top-text-services">Залезть в долговую яму стало проще!</p>
             <p class="top-text-services">Кредитные консультанты придут вам на помощь.</p>
-            <a class="tabs-credit-link" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+            <a class="tabs-credit-link" href="#">Отправить заявку</a>
                   </div>
             
                 </div>
@@ -317,7 +318,7 @@
                   <ul class="footer-equip-container">
                     <li class="footer-equip-item">
                       <a class="footer-equip-link" href="#">Материалы</a>
-                    </li>
+                    </li> 
                     <li class="footer-equip-item">
                       <a class="footer-equip-link" href="#">Техника</a>
                     </li>
@@ -336,13 +337,13 @@
                     <div class="social-networks-logo">
                       <ul class="social-list">
                         <li class="social-list-item">
-                          <a class="social-list-link social-list-link--inst" href="#" target="_blank">Vkontakte</a>
+                          <a class="social-list-link social-list-link--inst" href="#" target="_blank"><span class="visually-hidden">Vkontakte</span></a>
                         </li>
                         <li class="social-list-item">
-                          <a class="social-list-link social-list-link--fb" href="#" target="_blank">Facebook</a>
+                          <a class="social-list-link social-list-link--fb" href="#" target="_blank"><span class="visually-hidden">Facebook</span></a>
                         </li>
                         <li class="social-list-item">
-                          <a class="social-list-link social-list-link--twit" href="#" target="_blank">Twitter</a>
+                          <a class="social-list-link social-list-link--twit" href="#" target="_blank"><span class="visually-hidden">Twitter</span></a>
                         </li>
                       </ul>
                     </div>
@@ -350,10 +351,26 @@
                       <div class="feedback">Обратная связь:<a href="mailto:mail@htmlacademy.ru?subject=Вопрос по HTML" target="_blank">mail@htmlacademy.ru</a></div>
                       <div class="developer">Разработано — <a href="htmlacademy.ru" target="_blank">htmlacademy.ru</a></div>
                     </div>
-                    </div>
+                 </div>
                </div>
              </div>
             </footer>
-            </body>
-          </html>           
-      
+            <div class="popup-order">
+              <form action="https://echo.htmlacademy.ru" method="post">
+               <p>
+                 <label for="massage-name">Ваше имя:</label>
+                 <input id="massage-name" type="text" name="name" placeholder="Имя Фамилия">
+               </p>
+               <p>
+                 <label for="massage-email">Ваш e-mail:</label>
+                 <input id="massage-email" type="email" name="email" placeholder="email@example.com">
+               </p>	
+               <p>
+               <label for="massage-text">Текст письма:</label>
+                <textarea name="massage-text" cols="40" rows="3" placeholder="В свободной форме"></textarea>
+                </p>	
+                <button type="submit">Оформить заказ</button>
+              </form>
+            </div>
+         </body>
+      </html> 

@@ -1,0 +1,96 @@
+:root{
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-grey: #3D546F;
+  --basic-greylight: #C5C5C5;
+  --basic-background: #F1F5F7;
+  --white: #ffffff;
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-lilac: #DC91D8;
+  --special-greenlight: #8ED78F;
+  --special-yellowlight: #FFD180;
+  --success: #5FBB2D;
+  --warning: #FFBF47;
+  --error: #BA2732;
+  --greylight: #EAEAEA;
+  --black: #000000;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("/fonts/ptsans/ptsans.woff2") format("woff2"),
+  url("/fonts/ptsans/ptsans.woff") format("woff");
+  }
+@font-face {
+  font-family: "PT Sans bold" ;
+  src: url("/fonts/ptsans/ptsansbold.woff2") format("woff2"),
+  url("/fonts/ptsans/ptsansbold.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Cuprum" ;
+    src: url("/fonts/cuprum/cuprum.woff2") format("woff2"),
+    url("/fonts/cuprum/cuprum.woff") format("woff");
+    }
+@font-face {
+  font-family: "Cuprum bold" ;
+  font-weight: 600;
+  src: url("/fonts/cuprum/cuprumbold.woff2") format("woff2"),
+  url("/fonts/cuprum/cuprumbold.woff") format("woff");
+  }
+@font-face {
+  font-family: "Cuprum italic" ;
+  src: url("/fonts/cuprum/cuprumbolditalic.woff2") format("woff2"),
+  url("/fonts/cuprum/cuprumbolditalic.woff") format("woff");
+  }
+@font-face {
+  font-family: "Cuprum italic bold" ;
+  font-weight: 600;
+  src: url("/fonts/cuprum/cuprumitalicbold.woff2") format("woff2"),
+  url("/fonts/cuprum/cuprumitalic.woff") format("woff");
+  }
+body {
+  font-family: "Cuprum", "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--black);
+
+  background-color: var(--white);
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.header{
+  background-color: var(--basic-background);
+}
+.header-top-container{
+  background-color: var(--basic-grey);
+}
+.header-nav{
+  background-color: var(--basic-grey);
+}
+.header-nav-link{
+  color: var(--basic-background);
+}

@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="../980321-technomart-28/css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <div class="header-top">
         <div class="header-top-container">
-          <div class="logo-container">Техномарт</div>
+          <div class="logo-container">Техномарт
+            <img src="img/logo-technomart.png" alt="" class="logo-img">
+          </div>
           <div class="header-search">
             <form action="">
               <input type="search" id="search" placeholder="Поиск:">
@@ -327,13 +330,13 @@
                  <div class="social-networks-logo">
                    <ul class="social-list">
                      <li class="social-list-item">
-                       <a class="social-list-link social-list-link--inst" href="#" target="_blank">Vkontakte</a>
+                       <a class="social-list-link social-list-link--inst" href="#" target="_blank"><span class="visually-hidden">Vkontakte</span></a>
                      </li>
                      <li class="social-list-item">
-                       <a class="social-list-link social-list-link--fb" href="#" target="_blank">Facebook</a>
+                       <a class="social-list-link social-list-link--fb" href="#" target="_blank"><span class="visually-hidden">Facebook</span></a>
                      </li>
                      <li class="social-list-item">
-                       <a class="social-list-link social-list-link--twit" href="#" target="_blank">Twitter</a>
+                       <a class="social-list-link social-list-link--twit" href="#" target="_blank"><span class="visually-hidden">Twitter</span></a>
                      </li>
                    </ul>
                  </div>
@@ -345,5 +348,15 @@
             </div>
           </div>
          </footer>
+         <div class="popup-catalog">
+           <button class="modal-close-icon">
+           <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
+          </button>
+           <h3 class="">Товар добавлен в корзину!</h3>
+           <div class="popup-footer">
+             <a href="#">Оформить заказ</a>
+		         <a href="#">Продолжить покупки</a>
+           </div>
+         </div>
          </body>
        </html>           
