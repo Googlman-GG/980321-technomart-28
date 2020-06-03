@@ -1,8 +1,11 @@
-:root{
+:root {
   --basic-red: #EE3643;
   --basic-green: #63A63E;
   --basic-grey: #3D546F;
+  --dark-grey: #293449;
+  --darker-grey: #A9A9A9;
   --basic-greylight: #C5C5C5;
+  --light-grey: #F2F6F8;
   --basic-background: #F1F5F7;
   --white: #ffffff;
   --special-yellow: #FFBF47;
@@ -16,6 +19,7 @@
   --greylight: #EAEAEA;
   --black: #000000;
 }
+
 @font-face {
   font-family: "PT Sans";
   src: url("/fonts/ptsans/ptsans.woff2") format("woff2"),
@@ -55,19 +59,18 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: var(--black);
-
   background-color: var(--white);
 }
-
 a {
 	text-decoration: none;
 }
-
 img {
   max-width: 100%;
   height: auto;
 }
-
+ul {
+  list-style-type: none;
+}
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
@@ -82,15 +85,222 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.header{
+.button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+}
+
+ /* Шапка сайта */
+
+.logo-container {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+  background-color: var(--basic-red);
+  width: 220px;
+}
+.header {
   background-color: var(--basic-background);
 }
-.header-top-container{
+.header-actions-container a {
+  color: var(--white)
+}
+.header-top-container {
   background-color: var(--basic-grey);
 }
-.header-nav{
+.account-user-container{
+  width: 300px;
+  height: 45px;
+}
+.user-name-container{
+  background-color: var(--white);
+}
+.user-name{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 21px;
+
+}
+.header-nav {
   background-color: var(--basic-grey);
 }
-.header-nav-link{
+.header-nav-link {
   color: var(--basic-background);
 }
+
+/*  Содержание страницы  */
+
+.main-bottom-container{
+  background-color: var(--white);
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+.info-title, 
+.map-info-heading {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+}
+.info-text, 
+.heading-text-map{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+.main-info-item{ 
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main-info-item a {
+  color: var(--black);
+}
+.map-info-container {
+  background-color: var(--basic-red);
+  width: 300px;
+  height: 38px;
+
+}
+.map-info-container a {
+  color: var(--white);
+  font-family: "Cuprum", Arial, sans-serif;;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* Каталог */
+
+.catalog-head-container{
+  display: flex;
+  align-items: center;
+  height: 89px;
+  background-color: var(--light-grey);
+}
+.heding-text{
+  font-family: "Cuprum";
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 29px;
+}
+
+/* Фильтр товаров */
+
+.filter legend{
+  font-family: "PT Sans bold", Arial, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.filter li{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+/* Контейнер катрочки товара */
+
+.buy{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 38px; 
+  background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px #367315;
+}
+.buy-product-link{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.bookmark{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 129px;
+  height: 32px;
+  border: 3px solid var(--basic-green);
+}
+.in-bookmarks-link{
+  font-family: "Cuprum";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.title-item a {
+  font-family: "PT Sans bold", Arial, sans-serif;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--black);
+}
+.price-item-crossed {
+  font-family: "PT Sans bold", Arial, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: var(--darker-grey);
+}
+.price-product a {
+  font-family: "PT Sans bold", Arial, sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--white);
+  background-image: url(/img/red-button.svg);
+}
+
+/* Подвал сайта */
+
+.footer-top { 
+  background-color: var(--basic-grey);
+  list-style-type: none;
+}
+
+.footer-top-container a,
+ .footer-contacts{
+  color: var(--white);
+}
+.footer-equip a {
+  color: var(--special-yellowlight)
+}
+
+.footer-bottom {
+   background-color: var(--dark-grey);
+}
+.footer-rights{
+  color: var(--white)
+}
+
+/* Разработчик */
+
+.footer-developer a {
+  color: var(--special-yellow)
+} 
+.developer-text {
+  color: var(--basic-background)
+} 
+
