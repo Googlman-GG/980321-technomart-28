@@ -91,7 +91,9 @@ img {
  /* Шапка сайта */
 
  .header {
+  height: 320px;
   background-color: var(--basic-background);
+  
 }
 .header-top {
   display: flex;
@@ -99,9 +101,9 @@ img {
   background-color: var(--dark-grey);
 }
  .header-top-container {
-   display: flex;
-   justify-content: space-between;
-   width: 940px;
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
  }
 .logo-container {
   display: flex;
@@ -159,6 +161,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-self: center;
+  flex-wrap: wrap;
   width: 430px;
  }
  .header-actions-container a {
@@ -198,7 +201,6 @@ img {
   justify-content: center;
   width: 150px;
   height: 42px;
-  padding: 0;
   background-color: var(--basic-green);
  }
 .header-link {
@@ -217,15 +219,119 @@ img {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
-
 }
+.header-bottom {
+  max-width: 940px;
+  margin: auto;
+}
+.header-bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+.info-text-header {
+  width: 197px;
+  height: 71px;
+  margin-top: 38px;
+  margin-bottom: 44px;
+}
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.info-text-header {
+  margin-left: 30px;
+  font-family: "Cuprum italic", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+.header-phone-container {
+  width: 270px;
+  padding: 7px;
+  font-family: "Cuprum Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+  border: 3px solid var(--white);
+}
+.header-phone-container img {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.header-address {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.buttons-header {
+  display: flex;
+}
+.sing-in {
+  width: 121px;
+  height: 45px;
+  margin-top: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+}
+.sing-in-link {
+  font-family: "Cuprum bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--black);
+}
+.sing-in img {
+  margin-right: 3px;
+}
+.registration {
+  width: 150px;
+  height: 45px;
+  margin-top: 41px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+}
+.registration-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+line-height: 21px;
+color: var(--black);
+}
+
+/* Навигация */
+
 .header-nav {
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  max-width: 940px;
   background-color: var(--dark-grey);
 }
-.header-nav-link {
-  color: var(--basic-background);
-}
+.header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center; 
+  height: 60px;
 
+  list-style: none;
+}
+.header-nav-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+}
+.header-nav-item + .header-nav-item {
+  margin-left: 60px;
+}
 /*  Содержание страницы  */
 
 .main-bottom-container {
@@ -293,12 +399,16 @@ img {
 }
 /* Контейнер катрочки товара */
 
+.product-item{
+  position: relative;
+}
 .hover-container-item {
   height: 86px;
   width: 135;
   display: flex;
-  align-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
 }
 .buy { 
   width: 135px;
@@ -381,7 +491,7 @@ img {
 .footer-developer a {
   color: var(--special-yellow)
 } 
-.developer-text {
+.footer-developer span {
   color: var(--basic-background)
 } 
 
