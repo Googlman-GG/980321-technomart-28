@@ -160,9 +160,7 @@ img {
  .header-actions-container {
   display: flex;
   justify-content: space-between;
-  align-self: center;
   flex-wrap: wrap;
-  width: 430px;
  }
  .header-actions-container a {
   color: var(--white)
@@ -171,6 +169,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 20px;
  }
  .bookmarks-container::before {
   content: "";
@@ -184,7 +183,6 @@ img {
  .basket-container {
   display: flex;
   align-items: center;
-  justify-content: center;
  }
  .basket-container::before {
   content: "";
@@ -195,6 +193,12 @@ img {
   opacity: 0.3;
   background-image: url("/img/icon-cart.svg");
  } 
+ .red-ground-container {
+   background-color: var(--basic-red);
+ }
+ .basket-container a {
+   margin-right: 20px;
+ }
  .order-container {
   display: flex;
   align-items: center;
@@ -209,16 +213,40 @@ img {
   line-height: 24px;
 }
 .account-user-container {
-  width: 300px;
-  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .user-name-container {
+  width: 300px;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: var(--white);
 }
 .user-name {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--black);
+}
+.account-links {
+  display: flex;
+  justify-content: space-around;
+}
+.order-list {
+  position: relative;
+}
+.order-list::after{
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: -20px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--black);
 }
 .header-bottom {
   max-width: 940px;
@@ -259,8 +287,10 @@ img {
   color: var(--basic-red);
   border: 3px solid var(--white);
 }
+.header-phone-container a {
+ color: var(--basic-red);
+}
 .header-phone-container img {
-  margin-top: 5px;
   margin-right: 10px;
 }
 .header-address {
