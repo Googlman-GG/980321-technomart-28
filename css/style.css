@@ -1,96 +1,718 @@
-:root{
+:root {
   --basic-red: #EE3643;
   --basic-green: #63A63E;
   --basic-grey: #3D546F;
+  --dark-grey: #293449;
+  --darker-grey: #A9A9A9;
   --basic-greylight: #C5C5C5;
+  --light-grey: #F2F6F8;
   --basic-background: #F1F5F7;
   --white: #ffffff;
+  --border: #eaeaea;
   --special-yellow: #FFBF47;
   --special-blue: #3BBCE3;
   --special-lilac: #DC91D8;
   --special-greenlight: #8ED78F;
   --special-yellowlight: #FFD180;
+  --yellow-grey: #F9F5F0;
   --success: #5FBB2D;
   --warning: #FFBF47;
   --error: #BA2732;
   --greylight: #EAEAEA;
   --black: #000000;
 }
+
 @font-face {
   font-family: "PT Sans";
-  src: url("/fonts/ptsans/ptsans.woff2") format("woff2"),
-  url("/fonts/ptsans/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans/ptsans.woff2") format("woff2"),
+  url("fonts/ptsans/ptsans.woff") format("woff");
   }
 @font-face {
   font-family: "PT Sans bold" ;
-  src: url("/fonts/ptsans/ptsansbold.woff2") format("woff2"),
-  url("/fonts/ptsans/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsans/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsans/ptsansbold.woff") format("woff");
   }
   @font-face {
     font-family: "Cuprum" ;
-    src: url("/fonts/cuprum/cuprum.woff2") format("woff2"),
-    url("/fonts/cuprum/cuprum.woff") format("woff");
+    src: url("../fonts/cuprum/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum/cuprum.woff") format("woff");
     }
 @font-face {
   font-family: "Cuprum bold" ;
   font-weight: 600;
-  src: url("/fonts/cuprum/cuprumbold.woff2") format("woff2"),
-  url("/fonts/cuprum/cuprumbold.woff") format("woff");
+  src: url("../fonts/cuprum/cuprumbold.woff2") format("woff2"),
+  url("../fonts/cuprum/cuprumbold.woff") format("woff");
   }
 @font-face {
   font-family: "Cuprum italic" ;
-  src: url("/fonts/cuprum/cuprumbolditalic.woff2") format("woff2"),
-  url("/fonts/cuprum/cuprumbolditalic.woff") format("woff");
+  src: url("../fonts/cuprum/cuprumbolditalic.woff2") format("woff2"),
+  url("../fonts/cuprum/cuprumbolditalic.woff") format("woff");
   }
 @font-face {
   font-family: "Cuprum italic bold" ;
   font-weight: 600;
-  src: url("/fonts/cuprum/cuprumitalicbold.woff2") format("woff2"),
-  url("/fonts/cuprum/cuprumitalic.woff") format("woff");
+  src: url("../fonts/cuprum/cuprumitalicbold.woff2") format("woff2"),
+  url("../fonts/cuprum/cuprumitalic.woff") format("woff");
   }
 body {
-  font-family: "Cuprum", "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  min-width: 960px;
+  /* min-width Для того что бы при уменьшении окна не сжимался контент */
+  font-family: "PT Sans", "Cuprum", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--black);
-
   background-color: var(--white);
 }
-
 a {
 	text-decoration: none;
 }
-
 img {
   max-width: 100%;
   height: auto;
 }
-
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
-  white-space: nowrap;
-
+  white-space: nowrap; 
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.header{
+
+ /* Шапка сайта */
+
+ .header {
+  height: 320px;
   background-color: var(--basic-background);
+  
 }
-.header-top-container{
+.header-top {
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark-grey);
+}
+ .header-top-container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+ }
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--basic-red);
+  width: 220px;
+  height: 42px;
+  position: relative;
+}
+.logo-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  display: block;
+  background-color: var(--error);
+}
+.header-search {
+  display: flex;
+  margin-right: auto;
+  align-content: center;
+}
+.header-search input {
+  border: none;
+  height: 42px;
+  background-color: var(--dark-grey);
+}
+.header-search::before {
+  display: flex;
+  align-self: center;
+  content: "";
+  width: 17px;
+  height: 17px; 
+  margin-left: 17px;
+  margin-right: 8px;
+  opacity: 0.3;
+  background-image: url("../img/icon-search.svg");
+}
+.header-search input::-webkit-input-placeholder {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 42px;
+  color: var(--basic-background); 
+}
+.header-search input::-moz-placeholder {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 42px;
+  color: var(--basic-background); 
+}
+ .header-actions-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+ .header-actions-container a {
+  color: var(--white)
+}
+ .bookmarks-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+ }
+ .bookmarks-container::before {
+  content: "";
+  width: 14px;
+  height: 16px; 
+  margin-left: 17px;
+  margin-right: 9px;
+  opacity: 0.3;
+  background-image: url("../img/icon-bookmark.svg");
+ }
+ .basket-container {
+  display: flex;
+  align-items: center;
+ }
+ .basket-container::before {
+  content: "";
+  width: 15px;
+  height: 15px; 
+  margin-left: 17px;
+  margin-right: 9px;
+  opacity: 0.3;
+  background-image: url("../img/icon-cart.svg");
+ } 
+ .red-ground-container {
+   background-color: var(--basic-red);
+ }
+ .basket-container a {
+   margin-right: 20px;
+ }
+ .order-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 42px;
+  background-color: var(--basic-green);
+ }
+.header-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+.account-user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user-name-container {
+  width: 300px;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--white);
+}
+.user-name {
+  font-size: 21px;
+  line-height: 21px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--black);
+}
+.account-links {
+  display: flex;
+  justify-content: space-around;
+}
+.order-list {
+  position: relative;
+}
+.order-list::after{
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: -20px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--black);
+}
+.header-bottom {
+  max-width: 940px;
+  margin: auto;
+}
+.header-bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+.info-text-header {
+  width: 197px;
+  height: 71px;
+  margin-top: 38px;
+  margin-bottom: 44px;
+}
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.info-text-header {
+  margin-left: 30px;
+  font-family: "Cuprum italic", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+.header-phone-container {
+  width: 270px;
+  padding: 7px;
+  font-family: "Cuprum Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+  border: 3px solid var(--white);
+}
+.header-phone-container a {
+ color: var(--basic-red);
+}
+.header-phone-container img {
+  margin-right: 10px;
+}
+.header-address {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+.buttons-header {
+  display: flex;
+}
+.sing-in {
+  width: 121px;
+  height: 45px;
+  margin-top: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+}
+.sing-in-link {
+  font-family: "Cuprum bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--black);
+}
+.sing-in img {
+  margin-right: 3px;
+}
+.registration {
+  width: 150px;
+  height: 45px;
+  margin-top: 41px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+}
+.registration-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+line-height: 21px;
+color: var(--black);
+}
+
+/* Навигация */
+
+.header-nav {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  max-width: 940px;
+  background-color: var(--dark-grey);
+}
+.header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center; 
+  height: 60px;
+
+  list-style: none;
+}
+.header-nav-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+}
+.header-nav-item + .header-nav-item {
+  margin-left: 60px;
+}
+/*  Содержание страницы  */
+
+.main-content {
+  width: 940px;
+  margin: auto;
+}
+.main-nav-wrapp {
+  display: flex;
+  flex-wrap: wrap;
+   
+}
+.main-nav-container {
+  min-width: 300px;
+  height: 145px;
+  margin: 20px;
+}
+.main-nav-container {
+  flex-grow: 2;
+}
+.color-yellow-light {
+  background-color: var(--special-yellowlight);
+}
+.color-blue {
+  background-color: var(--special-blue);
+}
+.color-lilac {
+  background-color: var(--special-lilac);
+}
+.color-green {
+  background-color: var(--special-greenlight);
+}
+.color-yellow {
+  background-color: var(--special-yellow);
+}
+.header-text-goods,
+.main-manufacturer-text {
+  height: 89px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--yellow-grey);
+}
+.header-text-goods h2,
+.main-manufacturer-text h2 {
+  margin: auto;
+  margin-left: 28px;
+  font-family: "Cuprum";
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.btn{
+  width: 192px;
+  height: 38px;
+  margin: auto;
+  margin-right: 14px;
+  display:  table;
+  text-align: center;
+  background-color: var(--basic-red);
+}
+.btn-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Cuprum";
+  font-size: 14px;
+  line-height: 18px;
+  color:  var(--white);
+  text-transform: uppercase;
+}
+.popular-goods-wrapp {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  margin-top: 20px;
+  margin-bottom: 70px; 
+  border: 1px solid var(--border);
+}
+.product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.main-manufacturer-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+}
+.manufacturer-item {
+  width: 220px;
+  height: 145px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--yellow-grey);
+}
+.main-bottom-container {
+  height: 356px;
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.left-info-container {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.info-title {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+.info-text {
+  font-size: 13px;
+  line-height: 24px;
+}
+.main-info-item { 
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+.left-info-container ul {
+  list-style: none;
+}
+.main-info-link {
+  position: relative;
+}
+.main-info-link::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 10px;
+  left:  -30px;
+  background-color: var(--basic-red);
+}
+.main-info-item a {
+  color: var(--black);
+}
+.left-info-container span {
+  width: 220px;
+  margin-left: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+}
+.right-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right-info-container span {
+  width: 300px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+}
+.right-info-container img {
+  margin-bottom: 20px;
+}
+
+/* Каталог */
+
+.catalog-head-container {
+  display: flex;
+  align-items: center;
+  height: 89px;
+  background-color: var(--light-grey);
+}
+.heding-text {
+  font-family: "Cuprum";
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 29px;
+}
+
+/* Фильтр товаров */
+
+.filter legend {
+  font-family: "PT Sans bold", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.filter li {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+/* Контейнер катрочки товара */
+
+.product-item{
+  position: relative;
+}
+.hover-container-item {
+  height: 86px;
+  width: 135;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.buy { 
+  width: 135px;
+  height: 38px; 
+  background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px #367315;
+}
+.buy-product-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 38px; 
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.bookmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 129px;
+  height: 32px;
+  border: 3px solid var(--basic-green);
+}
+.in-bookmarks-link {
+  font-family: "Cuprum";
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.title-item a {
+  font-family: "PT Sans bold", Arial, sans-serif;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--black);
+}
+.price-item-crossed {
+  font-family: "PT Sans bold", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color: var(--darker-grey);
+}
+.price-product a {
+  font-family: "PT Sans bold", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--white);
+  background-image: url("../img/red-button.svg");
+}
+
+/* Подвал сайта */
+
+.footer-top { 
   background-color: var(--basic-grey);
+  list-style-type: none;
 }
-.header-nav{
-  background-color: var(--basic-grey);
+.footer-top-container {
+  width: 940px;
+  margin: auto;
+  display: flex;
 }
-.header-nav-link{
-  color: var(--basic-background);
+
+
+.footer-info {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  
 }
+.footer-info ul {
+  height: 60px;
+  margin-left: 65px;
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+.footer-info-link {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+}
+.footer-info-item + .footer-info-item {
+  margin-left: 70px;
+}
+.footer-middle-container {
+  width: 940px;
+  margin: auto;
+  display: flex;
+}
+.footer-phone {
+  display: block;
+}
+.footer-equip {
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+.footer-equip ul {
+  margin-left:45px;
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+.footer-equip-item + .footer-equip-item {
+  margin-left: 30px;
+}
+.footer-equip-link {
+  display: block;
+}
+.footer-top-container a,
+ .footer-contacts span {
+  color: var(--white);
+}
+.footer-equip a {
+  color: var(--special-yellowlight)
+}
+
+.footer-bottom {
+   background-color: var(--dark-grey);
+}
+.footer-bottom-container{
+  width: 940px;
+  margin: auto;
+  display: flex;
+}
+.footer-rights {
+  color: var(--white)
+}
+
+/* Разработчик */
+
+.footer-developer a {
+  color: var(--special-yellow)
+} 
+.footer-developer span {
+  color: var(--basic-background)
+} 
+

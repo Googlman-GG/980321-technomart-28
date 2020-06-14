@@ -10,44 +10,59 @@
     <header class="header">
       <div class="header-top">
         <div class="header-top-container">
-          <div class="logo-container">Техномарт
-            <img src="img/logo-technomart.png" alt="" class="logo-img">
+          <div class="logo-container"><span class="visually-hidden">Техномарт</span>
+            <img class="logo-img" src="img/logo-technomart.png" alt="" width="108" height="18">
           </div>
           <div class="header-search">
-            <form action="">
+            <form action="https://echo.htmlacademy.ru">
               <input type="search" id="search" placeholder="Поиск:">
             </form>
           </div>
           <div class="header-actions-container">
-          <div class="bookmarks-container">
-            <a class="header-bookmarks-link" href="#">Закладки:0</a>
-          </div>
-          <div class="basket-container">
-            <a class="header-basket-link" href="#">Корзина: 10</a>
-          </div>
-          <div class="order-container">
-            <a class="header-order-link" href="#">Оформить заказ</a>
-          </div>
+            <div class="bookmarks-container">
+             <a class="header-link" href="#">Закладки: 0</a>
+            </div>
+            <div class="basket-container red-ground-container">
+             <a class="header-link" href="#">Корзина: 10</a>
+            </div>
+            <div class="order-container">
+             <a class="header-link" href="#">Оформить заказ</a>
+            </div>
          </div>
         </div> 
         </div>
         <div class="header-bottom">
           <div class="header-bottom-container">
-            <div class="info-text">
-              Интернет-магазин строительных материалов и инструментов для ремонта
+            <div class="info-text-header">
+              <span>Интернет-магазин строительных материалов и инструментов для ремонта</span>
             </div>
             <div class="header-contacts">
-              <span class="header-phone">+7 (812) 555-05-55</span>
+              <div class="header-phone-container">
+                <a class="header-phone-svg" href="tel:+78125550555">
+                  <img src="img/icon-phone.svg" alt="Номер телефона магазина" width="19" height="19">
+                  <span class="header-phone">+7 (812) 555-05-55</span>
+                </a>
+              </div>
               <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span> 
             </div>
-            </div>
             <div class="account-user-container">
-              <div class="account-user">Равшан Джамшутович</div>
-              <span class="log-out">Выход</span>
+            <div class="user-name-container">
+              <a href="#">
+                 <img src="img/icon-user.svg" alt="Личный кабинет" width="20" height="18">
+              </a>
+              <a href="#">
+                <span class="user-name">Равшан Джамшутович</span>
+              </a>
+              <a href="#">
+                <img src="img/icon-logout.svg" alt="Выход" width="20" height="17">
+               </a>
+            </div>
+            <div class="account-links">
               <span class="order-list">Мои заказы</span>
               <span class="personal-office">Личный кабинет</span>
+            </div>
           </div>
-       </div>    
+         </div>    
        <nav class="header-nav">
        <div class="nav-container">
          <div class="nav-list-container">
@@ -78,7 +93,7 @@
         </div>
        </nav>
       </header>
-      <main>
+      <main class="main">
         <div class="catalog-main-container">
           <div class="way-to-catalog">
             <ul>
@@ -97,7 +112,7 @@
           <aside>
            <div class="powered-container">
              <section class="form-container">
-              <form action="https://echo.htmlacademy.ru" method="get">
+              <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="manufacturer-radio">
                  <legend>Производители:</legend>
                   <ul>                
@@ -143,15 +158,15 @@
           </aside>
           <div class="catalog-item-list">
               <div class="product-item-container">
-                <div class="hover-container-item">
-                 <a class="buy-product-link" href="#">Купить</a>
-                 <a class="in-bookmarks-link" href="#">В закладки</a>
-                </div>
                 <div class="product-item">
                   <img src="img/bfg6000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
                   <p class="title-item"><a class="title-item-container" href="#">Перфоратор BOSCH BFG 6000</a></p>
                   <span class="price-item-crossed">30500 Р.</span>
                   <span class="price-product"><a class="price-product-container" href="#">25500 Р.</a></span>
+                  <div class="hover-container-item">
+                    <div class="buy"><a class="buy-product-link" href="#">Купить</a></div>
+                    <div class="bookmark"><a class="in-bookmarks-link" href="#">В закладки</a></div>
+                  </div>
                 </div>
               </div> 
               <div class="product-item-container">
@@ -265,7 +280,7 @@
              </div>
             </div>
           </div> 
-          <div class="main-bottom-container">
+          <div class="mai n-bottom-container">
             <div class="main-bottom-text">
               <h2 class="heading-main-bottom">Пара слов о перфораторах</h2>
               <p class="main-bottom-paragraph">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
@@ -341,8 +356,8 @@
                    </ul>
                  </div>
                  <div class="footer-developer">
-                   <div class="feedback">Обратная связь: <a href="mailto:mail@htmlacademy.ru?subject=Вопрос по HTML" target="_blank" >mail@htmlacademy.ru</a></div>
-                   <div class="developer">Разработано — <a href="htmlacademy.ru" target="_blank">htmlacademy.ru</a></div>
+                   <div class="feedback"><span>Обратная связь: </span> <a href="mailto:mail@htmlacademy.ru?subject=Вопрос по HTML" target="_blank" >mail@htmlacademy.ru</a></div>
+                   <div class="developer"><span>Разработано — </span> <a href="htmlacademy.ru" target="_blank">htmlacademy.ru</a></div>
                  </div>
                  </div>
             </div>
