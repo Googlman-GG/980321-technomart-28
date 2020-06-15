@@ -561,20 +561,16 @@ color: var(--black);
   flex-wrap: wrap;
 }
 .product-item-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 70px; 
   border: 1px solid var(--border);
 }
 .product-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  position: relative;
 }
 .main-manufacturer-list {
   display: flex;
@@ -641,18 +637,37 @@ color: var(--black);
 
 /* Каталог */
 
+.main {
+  width: 940px;
+  margin: auto;
+}
+.way-to-catalog ul {
+  display: flex;
+}
+.top-way-item {
+  margin-left: 40px;
+}
+.heding-text {
+  font-family: "Cuprum", Arial, sans-serif;;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 29px;
+}
+.main-catalog {
+  display: flex;
+}
 .catalog-head-container {
   display: flex;
   align-items: center;
   height: 89px;
   background-color: var(--light-grey);
 }
-.heding-text {
-  font-family: "Cuprum";
-  text-transform: uppercase;
-  font-size: 30px;
-  line-height: 30px;
-  margin-left: 29px;
+.catalog-item-list {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap:  wrap;
+  justify-content: space-between;
 }
 
 /* Фильтр товаров */
@@ -674,16 +689,12 @@ color: var(--black);
   position: relative;
 }
 .hover-container-item {
+  /* display: none; */
   height: 86px;
   width: 135;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  top: 30px;
+  left: 30px; 
 }
 .buy { 
   width: 135px;
@@ -717,6 +728,9 @@ color: var(--black);
   line-height: 18px;
   text-transform: uppercase;
 }
+.title-item {
+  width: 185px;
+}
 .title-item a {
   font-family: "PT Sans bold", Arial, sans-serif;
   font-style: bold;
@@ -731,12 +745,22 @@ color: var(--black);
   text-decoration: line-through;
   color: var(--darker-grey);
 }
+.price-product {
+  height: 38px;
+  width: 141px;
+  height: 38px;
+  margin: auto;
+  margin-bottom: 20px;
+  display: block;
+  background-image: url("../img/red-button.svg");
+  background-repeat: no-repeat;
+}
 .price-product a {
+  
   font-family: "PT Sans bold", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: var(--white);
-  background-image: url("../img/red-button.svg");
 }
 
 /* Подвал сайта */
