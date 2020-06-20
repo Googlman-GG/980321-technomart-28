@@ -95,6 +95,7 @@
       <main class="main">
         <div class="catalog-main-container">
           <div class="way-to-catalog">
+            <a class="top-way-index" href="index.html"><span class="visually-hidden">Главная</span> </a>
             <ul>
               <li class="top-way-item">
                <a class="top-way-link" href="#">Каталог</a>
@@ -102,7 +103,9 @@
               <li class="top-way-item"> 
                 <a class="top-way-link" href="#">Инструмент</a>
               </li>
-              <li class="top-way-item">Перфораторы</li>
+              <li class="top-way-item">
+                <a class="top-way-link" href="#">Перфораторы</a>
+              </li>
             </ul>
           </div>
           <div class="catalog-head-container">
@@ -113,6 +116,23 @@
               <div class="powered-container">
                 <section class="form-container">
                  <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar" style="width: 80%;"></div>
+                      </div>
+                      <div class="toggle toggle-min" tabindex="0" style="left: 4%"></div>
+                      <div class="toggle toggle-max" tabindex="0" style="left: 70%"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price">
+                        <input type="number" name="min-price" value="0">
+                      </label>
+                      <label class="max-price">
+                        <input type="number" name="max-price" value="30000">
+                      </label>
+                    </div>
+                  </div>
                    <fieldset class="manufacturer-radio">
                     <legend>Производители:</legend>
                      <ul>                
@@ -266,36 +286,36 @@
                <div class="container-bottom-list">
                 <ul>
                   <li class="page-list-item">
-                   <a class="page-list-link" href="#">1</a>
+                   <a href="#">1</a>
                   </li>
                   <li class="page-list-item">
-                   <a class="page-list-link" href="#">2</a>
+                   <a href="#">2</a>
                   </li>
                   <li class="page-list-item">
-                   <a class="page-list-link" href="#">3</a>
+                   <a href="#">3</a>
                   </li>
                   <li class="page-list-item">
-                   <a class="page-list-link" href="#">Следующая </a>
+                   <a href="#">Следующая </a>
                   </li>
                 </ul>
               </div>
              </div> 
+          </div>         
           </div>
-          <div class="main-bottom-container">
-            <div class="main-bottom-text">
-              <h2 class="heading-main-bottom">Пара слов о перфораторах</h2>
-              <p class="main-bottom-paragraph">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
-              <p class="main-bottom-paragraph">Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.</p> 
-              <p class="main-bottom-paragraph">В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-            </div>
+          <div class="main-bottom-section">
+          <div class="main-bottom-content">
+            <h2 class="heading-main-bottom">Пара слов о перфораторах</h2>
+            <p class="main-bottom-paragraph">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
+            <p class="main-bottom-paragraph">Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.</p> 
+            <p class="main-bottom-paragraph">В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
           </div>
         </div>
       </main>
       <footer class="footer">
         <div class="footer-top">
           <div class="footer-top-container">
-            <div class="footer-logo">
-              <a href="#">Техномарт</a>
+            <div class="logo-container"><span class="visually-hidden">Техномарт</span>
+              <img class="logo-img" src="img/logo-technomart.png" alt="" width="108" height="18">
             </div>
              <div class="footer-info">
                <ul class="footer-info-container">
@@ -342,29 +362,46 @@
             </div> 
             <div class="footer-bottom">
               <div class="footer-bottom-container">
-                <span class="footer-rights">© 2010–2019 Компания «Техномарт»Все права защищены</span>
+                <span class="footer-rights">© 2010–2019 Компания «Техномарт» <br> Все права защищены</span>
                  <div class="social-networks-logo">
                   <ul class="social-list">
                     <li class="social-list-item">
-                      <a class="social-list-link social-list-link--inst" href="#" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
-                          <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
-                        </svg>
+                      <a class="social-list-link" href="#" target="_blank">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
+                          <path d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079 15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649 21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656 15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z" fill="white"/>
+                          </svg>                          
                         <span class="visually-hidden">Vkontakte</span>
                       </a>
                     </li>
                     <li class="social-list-item">
-                      <a class="social-list-link social-list-link--fb" href="#" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-                          <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+                      <a class="social-list-link" href="#" target="_blank">
+                        <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g filter="url(#filter0_d)">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.8938 1.4839C36.1232 1.4839 45.2265 10.5873 45.2265 21.8169C45.2265 33.0461 36.1232 42.1494 24.8938 42.1494C13.6643 42.1494 4.56108 33.0461 4.56108 21.8169C4.56108 10.5873 13.6643 1.4839 24.8938 1.4839Z" fill="#212A3A"/>
+                          </g>
+                          <path d="M31 15V11H27C24.7909 11 23 12.7909 23 15V19H19V23H23V33H27V23H31V19H27V15H31Z" fill="white"/>
+                          <defs>
+                          <filter id="filter0_d" x="0.561035" y="1.48389" width="48.6655" height="48.6656" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                          <feOffset dy="4"/>
+                          <feGaussianBlur stdDeviation="2"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                          </filter>
+                          </defs>
+                          </svg>
                         <span class="visually-hidden">Facebook</span>
                       </a>
                     </li>
                     <li class="social-list-item">
-                      <a class="social-list-link social-list-link--twit" href="#" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-                        <path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
-                      </svg>
+                      <a class="social-list-link" href="#" target="_blank">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461 1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z" fill="white"/>
+                          </svg>
                       <span class="visually-hidden">Instagram</span></a>
                     </li>
                   </ul>
@@ -378,13 +415,15 @@
           </div>
          </footer>
          <div class="popup-catalog">
-           <button class="modal-close-icon">
-           <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
-          </button>
-           <h3 class="">Товар добавлен в корзину!</h3>
+           <div class="popup-top">
+             <button class="modal-close-icon">
+             <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
+             </button>
+             <h3 class="">Товар добавлен в корзину!</h3>
+           </div>
            <div class="popup-footer">
-             <a href="#">Оформить заказ</a>
-		         <a href="#">Продолжить покупки</a>
+             <a class="btn btn-text" href="#">Оформить заказ</a>
+		         <a class="btn btn-text" href="#">Продолжить покупки</a>
            </div>
          </div>
          </body>
