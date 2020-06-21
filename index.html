@@ -15,7 +15,7 @@
           </div>
           <div class="header-search">
             <form action="https://echo.htmlacademy.ru">
-              <input type="search" id="search" placeholder="Поиск:">
+              <input type="search" placeholder="Поиск:">
             </form>
           </div>
           <div class="header-actions-container">
@@ -57,7 +57,6 @@
           </div>
          </div>
          <nav class="header-nav">
-          <div class="nav-container">
            <ul>
               <li class="header-nav-item">
                 <a class="header-nav-link" href="#">Главная</a>
@@ -80,11 +79,10 @@
              <li class="header-nav-item">
                <a class="header-nav-link" href="#">Контакты</a>
              </li>
-            </ul>
-           </div>
-         </nav>
+           </ul>           
+          </nav>
          </header>
-         <main class="main-content">
+         <main>
            <div class="main-nav-catalog">
             <div class="top-main-nav">
               <div class="main-nav-container color-yellow-yellow new">
@@ -103,18 +101,18 @@
                 <div class="catalog-right-image">Картинка для блока</div>
               </div>
              </div>
-             <div class="bottom-maim-nav">
+             <div class="bottom-main-nav">
               <div class="main-slider-container">
                 <div class="slider">
                   <div class="slider-item show">
                     <h2 class="hummer">Перфораторы</h2> 
                     <a href="#">Настоящие мужские игрушки</a>
-                    <img src="/img/hummer.jpg" alt="" width="620" height="266">
+                    <img src="img/hummer.jpg" alt="" width="620" height="266">
                   </div>
                   <div class="slider-item ">
                     <h2 class="drill">Дрели</h2>
                     <a href="#">Соседям на радость!</a>
-                    <img src="/img/drill.jpg" alt="" width="620" height="266">
+                    <img src="img/drill.jpg" alt="" width="620" height="266">
                   </div>
                 </div>
                 <a class="btn btn-text open-catalog" href="#">Открыть каталог</a>
@@ -241,37 +239,57 @@
                </a>
              </div>
             </div>
-            <div class="main-container-services">
-              <div class="services-container">
-                <div class="top-service-item">
-                 <h2 class="top-heading-services">Сервисы</h2>
-                 <p class="top-text-services">Хороший интернет-магазин отличается от плохого не только ценами!</p>
-                 <p class="top-text-services"></p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-                </div>
-                <div class="bottom-services-container">
-                  <div class="services-list-container">
-                   <ul class="bottom-services-list">
-                     <li class="bottom-services-list">Доставка</li>
-                     <li class="bottom-services-list">Гарантия</li>
-                     <li class="bottom-services-list">Кредит</li>
-                   </ul>
+           </div>
+           <div class="main-container-services">
+            <div class="services-container">
+              <div class="top-service-item">
+               <h2 class="top-heading-services">Сервисы</h2>
+               <p class="text-services">Хороший интернет-магазин отличается от плохого не только ценами!</p>
+               <p class="text-services">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+              <div class="tabs-servises">
+                <input id="tab1" name="srvt" type="radio" checked>
+                <input id="tab2" name="srvt" type="radio">
+                <input id="tab3" name="srvt" type="radio">
+                <nav class="tabs-nav">
+                  <ul>
+                    <li class="tab1">
+                     <label for="tab1">Доставка</label>
+                    </li>
+                    <li class="tab2">
+                      <label for="tab2">Гарантия</label>
+                    </li>
+                    <li class="tab3">
+                      <label for="tab3">Кредит</label>
+                    </li>
+                  </ul>
+                </nav>
+                <section class="tabs-info">
+                  <div class="tab1">
+                    <div class="tab-container">
+                      <h2 class="bottom-heading-container">Доставка</h2>
+                      <p class=" text-services">Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его <br> возгоранием,  вы всегда можете быть уверены в нашей <br> гарантии. Мы обменяем сгоревший товар на новый. <br> Дом уж восстановите как-нибудь сами.</p>
+                    </div>
+                    <img src="img/delivery.png" alt="Доставка товара" width="465" height="285">
                   </div>
-                  <div class="service-tabs-container">
-                    <h2 class="bottom-heading-container">Доставка</h2>
-                    <p class="top-text-services">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                  <div class="tab2">
+                    <div class="tab-container">
+                      <h2 class="bottom-heading-container">Гарантия</h2>
+                      <p class=" text-services">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+                    </div>
+                    <img src="img/guarantee.png" alt="Гарантия на товар" width="465" height="285">
                   </div>
-                  <div class="service-tabs-container">
-                    <h2 class="bottom-heading-container">Гарантия</h2>
-                    <p class="top-text-services">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                  <div class="tab3">
+                    <div class="tab-container">
+                      <h2 class="bottom-heading-container">Кредит</h2>
+                      <p class=" text-services">Залезть в долговую яму стало проще!</p>
+                      <p class=" text-services">Кредитные консультанты придут вам на помощь.</p>
+                      <a href="#" class="tabs-credit-link">Отправить заявку</a>
+                    </div>       
+                    <img src="img/credit.png" alt="Кредит и проценты" width="465" height="285">
                   </div>
-                  <div class="service-tabs-container">
-                    <h2 class="bottom-heading-container">Кредит</h2>
-                    <p class="top-text-services">Залезть в долговую яму стало проще!</p>
-                    <p class="top-text-services">Кредитные консультанты придут вам на помощь.</p>
-                    <a href="#" class="tabs-credit-link">Отправить заявку</a>
-                  </div>
-                </div>
+                </section>
               </div>
+             </div>
             </div>
            </div>
            <div class="main-bottom-container">
@@ -293,7 +311,7 @@
                  </ul>
                   <a href="#" class="btn btn-text">Подробнее о компании</a>
               </div>
-             <div class="right-info-container">
+              <div class="right-info-container">
                  <h2 class="info-title">Контакты</h2>
                  <p class="info-text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
                  <img src="img/mini-map.png" alt="Way to office" class="map" width="300" height="158">
@@ -406,17 +424,17 @@
             </footer>
             <div class="popup-order">
               <form action="https://echo.htmlacademy.ru" method="post">
-                <label for="massage-name">Ваше имя:</label>
                <p>
+                 <label for="massage-name">Ваше имя:</label>
                  <input id="massage-name" type="text" name="name" placeholder="Имя Фамилия">
                </p>
+               <p>
                  <label for="massage-email">Ваш e-mail:</label>
-              <p>
                  <input id="massage-email" type="email" name="email" placeholder="email@example.com">
                </p>	
+               <p>
                <label for="massage-text">Текст письма:</label>
-                <p>
-                  <textarea name="massage-text" cols="40" rows="3" placeholder="В свободной форме"></textarea>
+                <textarea name="massage-text" cols="40" rows="3" placeholder="В свободной форме"></textarea>
                 </p>	
                 <button type="submit">Оформить заказ</button>
               </form>
