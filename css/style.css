@@ -285,7 +285,7 @@ img {
   font-family: "Cuprum", Arial, sans-serif;
   color: var(--black);
 }
-.user-name-container::after{
+.user-name-container::after {
   content: "";
   position: absolute;
   top:  55px;
@@ -295,13 +295,15 @@ img {
   border-radius: 50%;
   background-color: var(--black);
 }
+
 .personal-link {
   padding: 0 10px;
   color: var(--black);
 }
-.personal-link:hover {
+ .personal-link:hover {
   color: var(--basic-red);
 }
+ 
 .header-bottom {
   max-width: 940px;
   margin: auto;
@@ -311,7 +313,6 @@ img {
   justify-content: space-between;
 }
 .info-text-header {
-  width: 197px;
   margin-top: 38px;
 }
 .header-contacts {
@@ -361,22 +362,7 @@ img {
 .buttons-container {
   display: flex;
   align-items: flex-start;
-  margin-top: 41px;
-}
-.sing-in {
-  margin-right: 10px;
-  padding: 12px 27px;
-  background-color: var(--white);
-  position: relative;
-}
- .svg-container {
-   display: inline;
- }
-.sing-svg svg {
-  fill: var(--basic-greylight);
-}      
-.sing-svg svg:hover {
-  fill: var(--black);
+ margin-top: 41px;
 }
 .sing-in-link {
   font-family: "Cuprum bold", Arial, sans-serif;
@@ -384,21 +370,29 @@ img {
   line-height: 21px;
   color: var(--black);
   position: relative;
+  margin-right: 10px;
+  padding: 12px 27px;
+  padding-left: 35px;
+  background-color: var(--white);
+  position: relative;
+  fill: var(--basic-greylight);
+}    
+.sing-in-link svg {
+  position: absolute;
+  top: 15px;
+  left:  10px;
 }
-.sing-in-link:hover {
+.sing-in-link:hover,
+ .sing-in-link:hover + svg{
   color: var(--basic-red);
+  fill: var(--basic-grey);
 }
-.sing-in-link:hover + svg {
-  fill: var(--black);
-}
-
  
-.registration {
+
+.registration-link {
   padding: 12px 24px;
   text-align: center;
   background-color: var(--white);
-}
-.registration-link {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
@@ -413,34 +407,29 @@ img {
 
 .header-nav {
   margin: 0 auto;
-  max-width: 940px;
-  background-color: var(--nav-blue);
-}
-.header-nav::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  top: 100%;
-  left: 0;
-  display: block;
-  background-color: var(--dark-blue);
+  width: 940px;
 }
 .header-nav ul {
+  padding-left: 0;
   display: flex;
-  text-align: center;
-  padding: 15px;
+  justify-content: space-around;
   list-style: none;
-  cursor: pointer;
-}
-.header-nav-item {
-  margin: 0 auto;
+  box-sizing: border-box;
 }
 .header-nav-link {
+  padding: 10px  32px;
+  line-height: 45px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
-  line-height: 24px;
   color: var(--white);
+  background-color: var(--nav-blue);
+}
+ 
+.header-nav-link:hover {
+    background-color: var(--dark-grey);
+}
+.header-nav-link:active {
+  color: var(--basic-greylight);
 }
  
 /*  Содержание страницы  */
@@ -507,13 +496,19 @@ img {
   background-position: center center;
 }
 .item-description {
-  width: 135px;
-  height: 38px;
+  min-width: 135px;
+ 
   margin: auto;
   margin-right: 14px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
 } 
+.item-description:hover {
+  background-color: rgba(110, 110, 110, 0.1);
+}
+.item-description:active {
+  background-color: rgba(110, 110, 110, 0.3);
+}
  .descr-text{ 
   font-family: "Cuprum";
   font-size: 14px;
@@ -671,6 +666,12 @@ img {
   text-align: center;
   background-color: var(--basic-red);
 }
+.btn:hover {
+  background-color: var(--error);
+}
+.btn:active {
+  background-color: #a30000;
+}
 .btn-text {
   font-family: "Cuprum";
   font-size: 14px;
@@ -706,7 +707,7 @@ img {
   flex-wrap: wrap;
   margin-bottom: 70px;
 }
-.manufacturer-item {
+.manufacturer-link {
   width: 220px;
   height: 145px;
   margin-top: 20px;
@@ -715,7 +716,12 @@ img {
   justify-content: center;
   border: 1px solid var(--yellow-grey);
 }
-
+.manufacturer-link:hover {
+ box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.manufacturer-link:active {
+ opacity: 0.3;
+}
 /* Сервисы */
 
 .main-container-services{
@@ -1030,6 +1036,12 @@ img {
   background-color: var(--basic-green);
   box-shadow: inset 0px -3px 0px #367315;
 }
+.buy:hover {
+  background-color: var(--special-greenlight);
+}
+.buy:active {
+  background-color: #0b5e00; 
+}
 .buy-product-link {
   display: flex;
   align-items: center;
@@ -1050,13 +1062,20 @@ img {
   height: 32px;
   border: 3px solid var(--basic-green);
 }
+.bookmark:hover {
+  border-color: var(--dark-blue);
+}
+.bookmark:active {
+  opacity: 0.3;
+}
 .product-item-container:hover .hover-container-item {
   display: block;
   display: flex;
 }
 .product-item-container:hover,
 .product-item-container:active, 
-.product-item-container:focus .product-item {
+.product-item-container:focus
+  {
   width: 220px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   
@@ -1118,12 +1137,16 @@ img {
   padding-left: 0;
   display: flex;
 }
-.page-list-item a { 
+.page-list-item { 
   margin-right: 20px; 
   padding: 10px 20px;
   border: 1px solid var(--border);
   color: var(--black);
   border-radius: 5px;
+ }
+ .curent-page {
+  color: var(--white);
+  background-color: var(--basic-red);
  }
 
  /* О перфораторах */
@@ -1248,22 +1271,42 @@ img {
 } 
 
 
-/* Попап Гланой страници */
+/* Попап Главной страници */
 
-.popup-order  {
+.popup-order {
   width: 620px;
+  padding: 46px 80px;
   margin: auto;
-  display: flex;
-   
-  
   border-top: 5px solid var(--basic-red);
+  background-color: var(--white);
 }
-.popup-order div {
-  width: 120px;
-  
+.popup-container {
+  display: flex;
+  justify-content: space-between;
+} 
+.popup-input label,
+.popup-input-text label {
+  font-family: "Cuprum",  Arial, sans-serif;
+   
+  font-size: 18px;
+  line-height: 24px;
+}
+.popup-container input  {
+  width: 220px; 
+  line-height: 38px;
+  display: block;
+  border: 2px solid var(--basic-greylight);
+  box-sizing: border-box;
+  border-radius: 2px; 
+}
+.popup-input-text   {
+  width: 460px;
+}
+.popup-order button {
+  width: 620px;
 }
 
-
+ 
 /* Попап каталога */
 
 .popup-catalog {

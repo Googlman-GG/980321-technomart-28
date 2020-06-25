@@ -41,7 +41,7 @@
          <div class="header-bottom">
           <div class="header-bottom-container">
             <div class="info-text-header">
-              <span>Интернет-магазин строительных материалов и инструментов для ремонта</span>
+              <span>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</span>
             </div>
             <div class="header-contacts">
               <div class="header-phone-container">
@@ -52,20 +52,14 @@
               <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span> 
             </div>
             <div class="buttons-container">
-              <div class="sing-in">
-                <div class="svg-container">
-                   <a class="sing-svg" href="#">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
-                    <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
-                    <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
-                  </svg>
+              <a class="sing-in-link" href="#">
+                <svg class="svg-sing-in" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                  <path d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+                  <path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+                </svg>
+                 Войти 
                 </a>
-                <a class="sing-in-link" href="#">Войти</a>
-                </div>
-              </div>
-              <div class="registration">
                 <a class="registration-link" href="#">Регистрация</a> 
-              </div>
             </div>
           </div>
          </div>
@@ -429,19 +423,23 @@
             </footer>
             <div class="popup-order">
               <form action="https://echo.htmlacademy.ru" method="post">
-               <div>
-                 <label for="massage-name">Ваше имя:</label>
-                 <input id="massage-name" type="text" name="name" placeholder="Имя Фамилия">
-               </div>
-               <div>
+                <div class="popup-container">
+                  <div class="popup-input">
+                  <label for="massage-name">Ваше имя:</label>
+                  <input id="massage-name" type="text" name="name" placeholder="Имя Фамилия">
+                </div>
+                <div class="popup-input"> 
                  <label for="massage-email">Ваш e-mail:</label>
                  <input id="massage-email" type="email" name="email" placeholder="email@example.com">
-               </div>	
-               <div>
-               <label for="massage-text">Текст письма:</label>
-                <textarea name="massage-text" cols="40" rows="3" placeholder="В свободной форме"></textarea>
                 </div>	
-                <button type="submit">Оформить заказ</button>
+               </div>
+               <div class="popup-input-text">
+               <label for="massage-text">Текст письма:</label>
+                <textarea name="massage-text" cols="60" rows="3" placeholder="В свободной форме"></textarea>
+                </div>	
+                <div class="popup-button-container">
+                   <button class="btn btn-text" type="submit">Отправить</button>
+                </div>
               </form>
             </div>
          </body>
