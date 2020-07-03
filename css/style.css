@@ -101,7 +101,6 @@ input[type="radio"].visually-hidden {
 }
 .header-top {
   background-color: var(--dark-grey);
-   
 }
  .header-top-container {
   display: flex;
@@ -109,13 +108,15 @@ input[type="radio"].visually-hidden {
   margin: auto;
  }
 .logo-container {
-  text-align: center;
-  line-height: 42px;
   background-color: var(--basic-red);
   width: 220px;
-  height: 42px;
   margin-right: 35px;
   position: relative;
+}
+.logo-container img {
+  position: absolute;
+  top: 12px;
+  left: 55px;
 }
 .logo-container:hover {
   transition: 0.3s;
@@ -128,7 +129,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 5px;
   top: 100%;
   left: 0;
   display: block;
@@ -139,25 +140,32 @@ input[type="radio"].visually-hidden {
 
 .header-search {
   height: 42px;
-  margin-right: 0;
+  margin-right: 20px;
+  margin-left: 2px;
   position: relative;
   border: 0;
 }
 .header-search button {
-  width: 35px;
+  width: 40px;
   height: 42px;
   top: 0;
-  left: -35px;
+  left: -37px;
   border: 0;
   fill:rgba(255, 255, 255, 0.3);
   position: absolute;
   background-color: var(--dark-grey);
 }
+.header-search svg {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+}
 .header-search button:hover {
   fill:rgba(255, 255, 255, 1);
 }
 .header-search input {
-  width: 230px;
+  width: auto;
+  margin-left: 3px;
   display: block;
   border: none;
   height: 42px;   
@@ -193,17 +201,15 @@ input[type="radio"].visually-hidden {
   justify-content: space-around;
   margin-left: auto;
  }
- .header-actions-container div {
-   position: relative;
- }
  .header-actions-container a {
   font-family:  "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 42px;
   color: var(--white);
+  position: relative;
 }
 .bookmarks {
-  padding-right: 20px;
+  padding: 0 39px;
 }
  .bookmarks::before {
   content: "";
@@ -211,8 +217,8 @@ input[type="radio"].visually-hidden {
   height: 16px; 
   opacity: 0.3;
   position: absolute;
-  top: 12px;
-  left: -19px;
+  top: 13px;
+  left: 17px;
   background-image: url("../img/icon-bookmark.svg");
  }
 .bookmarks:hover::before {
@@ -223,13 +229,12 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 .basked {
-  max-width: 136px;
-  padding: 10px 21px;
+  padding: 0 26px;
   padding-left: 35px;
 }
 .basked-red {
   max-width: 136px;
-  padding: 11px 21px;
+  padding: 0 26px;
   padding-left: 35px;
   background-color: var(--basic-red);
  }
@@ -238,7 +243,7 @@ input[type="radio"].visually-hidden {
   content: "";
   width: 15px;
   height: 15px; 
-  top:  11px;
+  top:  14px;
   left: 13px;
   position: absolute;
   opacity: 0.3;
@@ -256,10 +261,12 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
  .checkout{
-  text-align: center;
   line-height: 42px;
-  padding: 11px 15px;
+  padding: 0 18px;
   background-color: var(--basic-green);
+ }
+ .checkout:hover {
+  background-color: var(--success);
  }
  .checkout:active {
   opacity: 0.3;
@@ -314,53 +321,49 @@ input[type="radio"].visually-hidden {
 }
 .header-bottom {
   max-width: 940px;
-  margin: auto;
-}
-.header-bottom-container {
-  display: flex;
+  margin: auto;display: flex;
   justify-content: space-between;
-}
-.info-text-header {
-  margin-top: 38px;
 }
 .header-contacts {
   margin-top: 40px;
   text-align: center;
   position: relative;
+  margin-left: 23px;
 }
 .info-text-header {
-  margin-left: 30px;
+  margin-top: 44px;
+  margin-left: 29px;
   font-family: "Cuprum italic", Arial, sans-serif;
-  font-size: 21px;
-  line-height: 21px;
   font-size: 16px;
-  line-height: 23px;
+  letter-spacing: -0.4px;
+  line-height: 24px;
   color: var(--basic-red);
 }
 .header-phone-container {
-  width: 270px;
-  padding: 7px;
+  margin-right: 0px;
+  margin-top: 5px;
+  
+  width: 267px;
+  position: relative;
   font-family: "Cuprum Bold", Arial, sans-serif;
-  font-size: 21px;
-  line-height: 30px;
+  font-size: 23px;
+  line-height: 40px;
   color: var(--basic-red);
   border: 3px solid var(--white);
 }
 .header-phone-container a {
-  position: relative;
-  color: var(--basic-red);
+  margin-left: 30px;
+  letter-spacing: -.8px;
+ color: var(--basic-red);
 }
-.header-phone-svg::before {
+.header-phone::before {
   content: "";
   position: absolute;
-  top: 2px;
-  left: -30px;
+  top: 12px;
+  left: 38px;
   width: 19px;
   height: 19px; 
   background-image: url("../img/icon-phone.svg");
-}
-.header-phone-container img {
-  margin-right: 10px;
 }
 .header-address {
   font-family: "Cuprum", Arial, sans-serif;
@@ -425,12 +428,13 @@ input[type="radio"].visually-hidden {
 .header-nav ul {
   padding-left: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
-  box-sizing: border-box;
 }
 .header-nav-link {
-  padding: 20px  31.9px;
+  padding: 20px  0;
+  padding-left: 32px;
+  padding-right: 32px;
   line-height: 45px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -518,7 +522,6 @@ input[type="radio"].visually-hidden {
 }
 .item-description {
   min-width: 135px;
- 
   margin: auto;
   margin-right: 14px;
   text-align: center;
@@ -806,7 +809,7 @@ input[type="radio"].visually-hidden {
   bottom: 15px;
   left: 230px;
   position: absolute;
-  background-image: url(/img/shadow-services.png);
+  background-image: url(../img/shadow-services.png);
 }
 .tabs-content {
   display: flex;
@@ -1110,7 +1113,7 @@ input[type="radio"].visually-hidden {
   left: -34px;
   width: 23px;
   height: 23px;
-  background-image: url(/img/checkbox-off.svg);
+  background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
    
@@ -1123,7 +1126,7 @@ input[type="radio"].visually-hidden {
   width: 25px;
   height: 23px;
   background-color: var(--white);
-  background-image: url(/img/checkbox-on.svg);
+  background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
  }
