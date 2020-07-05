@@ -339,10 +339,8 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   color: var(--basic-red);
 }
-.header-phone-container {
-  margin-right: 0px;
+.header-phone-container{
   margin-top: 5px;
-  
   width: 267px;
   position: relative;
   font-family: "Cuprum Bold", Arial, sans-serif;
@@ -373,7 +371,7 @@ input[type="radio"].visually-hidden {
 .buttons-container {
   display: flex;
   align-items: flex-start;
-  margin-top: 41px;
+  margin-top: 45px;
 }
 .sing-in-link {
   font-family: "Cuprum bold", Arial, sans-serif;
@@ -382,16 +380,16 @@ input[type="radio"].visually-hidden {
   color: var(--black);
   position: relative;
   margin-right: 10px;
-  padding: 12px 20px;
-  padding-left: 50px;
+  padding: 12px 26px;
+  padding-left: 44px;
   background-color: var(--white);
   position: relative;
   fill: var(--basic-greylight);
 }    
 .sing-in-link svg {
   position: absolute;
-  top: 13px;
-  left:  20px;
+  top: 15px;
+  left:  19px;
 }
 .sing-in-link:hover,
  .sing-in-link:hover + svg {
@@ -418,10 +416,9 @@ input[type="radio"].visually-hidden {
 
 /* Навигация */
 
-
 .header-nav {
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 48px;
   width: 940px;
   position: relative;
 }
@@ -430,6 +427,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   list-style: none;
+}
+.header-nav-item {
+  text-align: center;
 }
 .header-nav-link {
   padding: 20px  0;
@@ -474,12 +474,15 @@ input[type="radio"].visually-hidden {
 }
  .new::after {
   content: "new";
+  font-family: "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 32px;
   position: absolute;
   width: 100px;
   height: 30px;
-  top: 10px;
-  left: 230px;
-  
+  top: 7px;
+  left: 226px;
   display: block;
   color: var(--white);
   text-align: center;
@@ -487,7 +490,7 @@ input[type="radio"].visually-hidden {
   transform: rotate(45deg);
 }
 .main-nav-container {
-  width: 280px;
+  width: 277px;
   height: 123px;
   padding-left: 23px;
   position: relative;
@@ -502,8 +505,8 @@ input[type="radio"].visually-hidden {
   font-size: 0px;
   width: 78px; 
   height: 72px; 
-  top: 20px;
-  right: 30px;
+  top: 29px;
+  right: 27px;
   position: absolute;
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
@@ -513,8 +516,8 @@ input[type="radio"].visually-hidden {
   font-size: 0px;
   width: 78px; 
   height: 72px; 
-  top: 20px;
-  right: 30px;
+  top: 29px;
+  right: 29px;
   position: absolute;
   background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
@@ -522,7 +525,6 @@ input[type="radio"].visually-hidden {
 }
 .item-description {
   min-width: 135px;
-  margin: auto;
   margin-right: 14px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.3);
@@ -547,8 +549,8 @@ input[type="radio"].visually-hidden {
   font-size: 0px;
   width: 78px; 
   height: 72px; 
-  top: 20px;
-  right: 30px;
+  top: 27px;
+  right: 31px;
   position: absolute;
   background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
@@ -598,6 +600,7 @@ input[type="radio"].visually-hidden {
   padding-top: 20px;
 }
 .open-catalog {
+width: 192px;
  position: absolute;
  bottom: 27px;
  left: 24px;
@@ -622,13 +625,13 @@ input[type="radio"].visually-hidden {
 }
 .left svg {
   position: absolute;
-  bottom: 70px;
-  right: 280px;
+  bottom: 74px;
+  right: 276px;
 }
 .right svg  {
   position: absolute;
-  bottom: 70px;
-  right: -280px;
+  bottom: 74px;
+  right: -276px;
 }
 
 /*  */
@@ -637,8 +640,8 @@ input[type="radio"].visually-hidden {
   font-size: 0px;
   width: 78px; 
   height: 72px; 
-  top: 20px;
-  right: 30px;
+  top: 27px;
+  right: 35px;
   position: absolute;
   background-image: url(../img/icon-4.svg);
   background-repeat: no-repeat;
@@ -648,8 +651,8 @@ input[type="radio"].visually-hidden {
   font-size: 0px;
   width: 78px; 
   height: 72px; 
-  top: 20px;
-  right: 30px;
+  top: 29px;
+  right: 31px;
   position: absolute;
   background-image: url(../img/icon-5.svg);
   background-repeat: no-repeat;
@@ -679,14 +682,12 @@ input[type="radio"].visually-hidden {
   margin: auto;
   margin-top: 60px;
 }
-.popular-goods-container .header-text {
-  margin-bottom: 20px;
-}
 .header-text {
-  padding: 20px;
+  padding: 26px 0;
   display: flex;
   justify-content: space-between;
   background-color: var(--yellow-grey);
+  margin-bottom: 20px;
 }
 .header-text h2 {
   margin: auto;
@@ -698,6 +699,7 @@ input[type="radio"].visually-hidden {
 }
 .header-text a {
   width: 192px;
+  margin-right: 20px;
  }
  .btn{
   text-align: center;
@@ -713,13 +715,12 @@ input[type="radio"].visually-hidden {
   font-family: "Cuprum";
   font-size: 14px;
   line-height: 18px;
-  padding: 11px 20px;
+  padding: 9px 0px;
   color: var(--white);
   text-transform: uppercase;
   display: inline-block;
   box-sizing: border-box;
 }
- 
 .popular-goods-wrapp {
   display: flex;
   justify-content: space-between;
@@ -728,18 +729,18 @@ input[type="radio"].visually-hidden {
 .main-popular-manufacturer {
   width: 940px;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .main-manufacturer-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 70px;
+  margin-bottom: 45px;
 }
 .manufacturer-link {
   width: 220px;
   height: 145px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -760,34 +761,40 @@ input[type="radio"].visually-hidden {
   width: 940px;
   margin: auto;
   position: relative;
-  padding-top: 64px;
+  padding-top: 43px;
+  
 }
-.service-heading{
-  margin-bottom: 70px;
-}
-.top-heading-services {
+.services-container h2 {
+  text-transform: uppercase;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 28px;
+}
+.service-heading {
+  margin-bottom: 50px;
+}
+.service-heading p  {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
 }
 .text-services {
   font-size: 13px;
   line-height: 24px; 
-  position: relative;
 } 
-
+.tabs-nav {
+  position: relative;
+}
 .tabs-nav ul {
   width: 240px;
   padding: 0;
-  text-align: center;
   list-style: none;
   cursor: pointer;
 }
 .tab-1,
 .tab-2, 
 .tab-3 {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 16px 23px;
   color: var(--white);
   background-color: var(--nav-blue);
   font-family: "Cuprum bold" ,Arial, sans-serif;
@@ -806,17 +813,18 @@ input[type="radio"].visually-hidden {
   content: "";
   width: 10px;
   height: 279px;
-  bottom: 15px;
+  bottom: 35px;
   left: 230px;
   position: absolute;
   background-image: url(../img/shadow-services.png);
 }
 .tabs-content {
   display: flex;
-  margin-left: 40px;
+  margin-left: 80px;
+  
 }
 .tab1 {
-  min-height: 260px;
+  min-height: 283px;
   padding-right: 345px;
   background-image: url("../img/delivery.png"); 
   background-repeat: no-repeat;
@@ -876,11 +884,12 @@ input[type="radio"].visually-hidden {
 }
 .left-info-container ul {
   list-style: none;
+  color: var(--black);
 }
-.main-info-link {
+.main-info-item {
   position: relative;
 }
-.main-info-link::before {
+.main-info-item span::before {
   content: "";
   position: absolute;
   width: 25px;
@@ -892,13 +901,8 @@ input[type="radio"].visually-hidden {
 .left-info-container p {
   margin-top: 24px;
 }
-.main-info-item a {
-  color: var(--black);
-}
-.left-info-container a {
+.left-info-container span {
   margin-top: 20px;
-}
-.left-info-container a {
   width: 220px;
   margin-top: 20px;
 }
@@ -906,8 +910,8 @@ input[type="radio"].visually-hidden {
   width: 300px;
 }
 .right-info-container p {
-    margin-top: 24px;
-    margin-bottom: 32px;
+  margin-top: 24px;
+  margin-bottom: 32px;
 }
 .right-info-container a {
   width: 300px;
