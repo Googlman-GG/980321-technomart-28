@@ -50,7 +50,7 @@
             </div>
          </div>
          <nav class="header-nav">
-           <ul>
+           <ul class="nav-list">
               <li class="header-nav-item">
                 <a class="header-nav-link" href="#">Главная</a>
               </li>
@@ -95,32 +95,40 @@
               </div>
              </div>
              <div class="bottom-main-nav">
-              <div class="main-slider-container">
-                <div class="slider">
-                  <div class="slider-item active">
-                    <h2 class="hummer">Перфораторы</h2> 
-                    <a href="#">Настоящие мужские игрушки</a>
-                    <img src="img/hummer.jpg" alt="" width="620" height="266">
+              <div class="slider">
+                <div class="slides">
+                  <div class="slide-drill ">
+                    <div class="slider-title">
+                      <h2 class="slide-heading">Дрели</h2>
+                      <p class="slide-description">Соседям на радость!</p>
+                    </div>
+                    <a href="#" class="slider-btn btn btn-text">Открыть каталог</a>
                   </div>
-                  <div class="slider-item ">
-                    <h2 class="drill">Дрели</h2>
-                    <a href="#">Соседям на радость!</a>
-                    <img src="img/drill.jpg" alt="" width="620" height="266">
+                  <div class="slide-hummer active">
+                    <div class="slider-title">
+                      <h2 class="slide-heading">Перфораторы</h2>
+                      <p class="slide-description">Настоящие мужские игрушки</p>
+                    </div>
+                    <a href="#" class="slider-btn btn btn-text">Открыть каталог</a>
                   </div>
                 </div>
-                <a class="btn btn-text open-catalog" href="#">Открыть каталог</a>
-                <div class="slider-scroll">
-                  <button class="left" type="button" aria-label="Влево">
+                <div class="slider-controls">
+                  <button class="slider-arrow slider-arrow-left">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
                       <path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/>
                     </svg>
                   </button>
-                  <button class="right active-button" type="button" aria-label="Вправо">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40"><path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
+                  <button class="slider-arrow slider-arrow-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
+                      <path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
                     </svg>
                   </button>
+                  <ul class="slider-pagination">
+                    <li class="slider-pagination-item active-slide"></li>
+                    <li class="slider-pagination-item "></li>
+                  </ul>
                 </div>
-               </div>
+              </div>
                <div class="bottom-aside-container">
                 <div class="main-nav-container color-green">
                   <h2 class="title-item-container">Скидка 50%</h2>
@@ -137,7 +145,7 @@
             </div>
             <div class="main-popular-goods">
              <div class="popular-goods-container">
-                <div class="header-text">
+                <div class="header-text popular-text">
                  <h2>Популярные товары:</h2>
                   <a class="btn btn-text" href="#">Все популярные товары</a>                 
                 </div>
@@ -194,9 +202,9 @@
              </div>
            </div>
            <div class="main-popular-manufacturer">
-            <div class="header-text">
+            <div class="header-text manufacturer-text">
               <h2 class="popular-manufacturer-heading">Популярные производители:</h2>
-                <a class="btn btn-text" href="#">Все производители</a>
+              <a class="btn btn-text" href="#">Все производители</a>
              </div>
             <div class="main-manufacturer-list">   
              <div class="manufacturer-item">
@@ -245,8 +253,8 @@
             <div class="services-container">
                 <div class="service-heading"> 
                   <h2 class="top-heading-services">Сервисы</h2>
-                  <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
-                  <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+                  <p class="top-description-services">Хороший интернет-магазин отличается от плохого не только ценами!</p>
+                  <p class=" ">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                 </div>
                 <div class="tab-container">
                   <div class="tabs-nav">
@@ -263,22 +271,26 @@
                   </ul>
                  </div>
                  <section class="tabs-content">
-                  <div class="tab1 ">
+                  <div class="tab1 active">
                       <h2 class="bottom-heading-container">Доставка</h2>
-                      <p class=" text-services">Мы с удовольствием доставим ваш товар прямо <br> 
+                      <p class=" text-services delivery-description">Мы с удовольствием доставим ваш товар прямо <br> 
                         к вашему подъезду совершенно бесплатно!<br>
                         Ведь мы неплохо заработаем,<br>
                         поднимая его на ваш этаж!</p>
                     </div>
-                    <div class="tab2 active">
+                    <div class="tab2 ">
                       <h2 class="bottom-heading-container">Гарантия</h2>
-                      <p class=" text-services">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                      <p class=" text-services guarantee-description">Если купленный у нас товар поломается или заискрит,<br>
+                         а также в случае пожара, спровоцированного его <br>
+                         возгоранием, вы всегда можете быть уверены в нашей <br>
+                         гарантии. Мы обменяем сгоревший товар на новый.<br>
+                         Дом уж восстановите как-нибудь сами.</p>
                     </div>
                     <div class="tab3 ">
                       <h2 class="bottom-heading-container">Кредит</h2>
-                      <p class=" text-services">Залезть в долговую яму стало проще!</p>
-                      <p class=" text-services">Кредитные консультанты придут вам на помощь.</p>
-                      <a href="#" class="btn btn-text">Отправить заявку</a>
+                      <p class="text-services credit-description">Залезть в долговую яму стало проще!<br> 
+                         Кредитные консультанты придут вам на помощь.</p>
+                      <a href="#" class="credit-btn btn btn-text">Отправить заявку</a>
                     </div>
                   </section>
                 </div>
@@ -315,8 +327,8 @@
          <footer class="footer">
            <div class="footer-top">
              <div class="footer-top-container">
-               <a href="#" class="logo-container"><span class="visually-hidden">Техномарт</span>
-                <img src="img/logo-technomart.png" alt="Техномарт" class="logo-img" width="108" height="17">
+               <a href="#" class="logo-container footer-logo"><span class="visually-hidden">Техномарт</span>
+                <img src="img/logo-technomart.png" alt="Техномарт" class="logo-img" width="138" height="23">
                </a>
                <div class="footer-info">
                   <ul class="footer-info-container">
