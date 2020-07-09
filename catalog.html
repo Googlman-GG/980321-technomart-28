@@ -37,7 +37,6 @@
               <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             </div>
             <span class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-             
           </div>
           <div class="account-user-container">
             <div class="user-name-container">
@@ -57,7 +56,7 @@
               </a>
             </div>
             <div class="links-container">
-             <a class="personal-link" href="#">Мои заказы</a>
+             <a class="personal-link" href="#">Мои заказы </a>
              <a class="personal-link" href="#">Личный кабинет</a>
             </div>
           </div>
@@ -112,7 +111,7 @@
             <h1 class="heding-text">Перфораторы</h1>
           </div>
           <div class="main-catalog">
-            <aside> 
+            <aside class="aside-container"> 
               <div class="powered-container">
                 <section class="form-container">
                  <div class="form-header">Фильтр:</div>
@@ -123,8 +122,8 @@
                       <div class="scale">
                         <div class="bar" style="width: 80%;"></div>
                       </div>
-                      <div class="toggle toggle-min" tabindex="0" style="left: 4%"></div>
-                      <div class="toggle toggle-max" tabindex="0" style="left: 70%"></div>
+                      <div class="toggle toggle-min" tabindex="0" style="left: 8%"></div>
+                      <div class="toggle toggle-max" tabindex="0" style="left: 72%"></div>
                     </div>
                     <div class="price-controls">
                       <label class="min-price">
@@ -155,8 +154,8 @@
                          <input class="visually-hidden filter-checkbox" type="checkbox" name="Dewalt" id="filter-dewalt">
                          <label for="filter-dewalt">Dewalt</label>
                        </li>
-                       <li class="input-item disabled">
-                         <input class="visually-hidden filter-checkbox " type="checkbox" name="Hitachi" id="filter-hitachi" disabled>
+                       <li class="input-item">
+                         <input class="visually-hidden filter-checkbox " type="checkbox" name="Hitachi" id="filter-hitachi">
                          <label for="filter-hitachi">Hitachi</label>
                        </li>
                      </ul>
@@ -184,9 +183,9 @@
                <div class="sorting">
                 <span class="sorting-text">Сортировка:</span>
                 <div class="sorting-buttons">
-                  <button class="sorting-button"><span>По цене</span></button>
-                  <button class="sorting-button"><span>По типу</span></button>
-                  <button class="sorting-button"><span>По функциональности</span></button>
+                  <button class="sorting-button sorting-button-price"><span>По цене</span></button>
+                  <button class="sorting-button sorting-button-type"><span>По типу</span></button>
+                  <button class="sorting-button sorting-button-function"><span>По функционалу</span></button>
                 </div>
                 <div class="buttons-direction">
                   <button class="to-up">
@@ -203,56 +202,64 @@
                </div>
                  <div class="product-item-container">
                    <div class="product-item">
-                     <img src="img/bfg6000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
-                     <p class="title-item"><a class="title-item-container" href="#">Перфоратор BOSCH BFG 6000</a></p>
+                     <img class="product-6000" src="img/bfg6000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
+                     <p class="title-item"><a class="title-item-link" href="#">Перфоратор BOSCH BFG 6000</a></p>
                      <span class="price-item-crossed">30500 Р.</span>
                      <div class="price-product"><a class="price-product-container" href="#">25500 Р.</a></div>
                      <div class="hover-container-item">
-                       <div class="buy"><a class="buy-product-link" href="#">Купить</a></div>
+                       <div class="buy">
+                        <a class="buy-product-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить</a></div>
                        <div class="bookmark"><a class="in-bookmarks-link" href="#">В закладки</a></div>
                      </div>
                    </div>
                  </div> 
                  <div class="product-item-container">
                    <div class="product-item">
-                     <img src="img/bfg6000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
-                     <p class="title-item"> <a class="title-item-container" href="#">Перфоратор BOSCH BFG 6000</a></p>
+                     <img class="product-6000" src="img/bfg6000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
+                     <p class="title-item"> <a class="title-item-link" href="#">Перфоратор BOSCH BFG 6000</a></p>
                      <span class="price-item-crossed">30500 Р.</span>
                      <span class="price-product"><a class="price-product-container" href="#">25500 Р.</a></span>
                      <div class="hover-container-item">
-                      <div class="buy"><a class="buy-product-link" href="#">Купить</a></div>
+                      <div class="buy">
+                        <a class="buy-product-link" href="#">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                          Купить</a></div>
                       <div class="bookmark"><a class="in-bookmarks-link" href="#">В закладки</a></div>
                     </div>
                    </div>
                  </div>
                  <div class="product-item-container new-container">
                    <div class="product-item">
-                     <img src="img/bfg6000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
-                     <p class="title-item"> <a class="title-item-container" href="#">Перфоратор BOSCH BFG 6000</a></p>
+                     <img class="product-6000" src="img/bfg6000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
+                     <p class="title-item"> <a class="title-item-link" href="#">Перфоратор BOSCH BFG 6000</a></p>
                      <span class="price-item-crossed">30500 Р.</span>
                      <span class="price-product"><a class="price-product-container" href="#">25500 Р.</a></span>
                      <div class="hover-container-item">
-                      <div class="buy"><a class="buy-product-link" href="#">Купить</a></div>
+                      <div class="buy"><a class="buy-product-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                        Купить</a></div>
                       <div class="bookmark"><a class="in-bookmarks-link" href="#">В закладки</a></div>
                     </div>
                    </div>
                  </div>
                  <div class="product-item-container new-container">
                    <div class="product-item">
-                     <img src="img/bfg3000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
-                     <p class="title-item"> <a class="title-item-container" href="#">Перфоратор BOSCH BFG 3000</a></p>
+                     <img class="product-3000" src="img/bfg3000.jpg" alt="Перфоратор BOSCH" width="127" height="112">
+                     <p class="title-item"> <a class="title-item-link" href="#">Перфоратор BOSCH BFG 3000</a></p>
                      <span class="price-item-crossed">22500 Р.</span>
                      <span class="price-product"><a class="price-product-container" href="#">15500 Р.</a></span>
                      <div class="hover-container-item">
-                       <div class="buy"><a class="buy-product-link" href="#">Купить</a></div>
+                       <div class="buy"><a class="buy-product-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                        Купить</a></div>
                        <div class="bookmark"><a class="in-bookmarks-link" href="#">В закладки</a></div>
                      </div>
                    </div>
                  </div> 
                  <div class="product-item-container">
                    <div class="product-item">
-                     <img src="img/bfg6000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
-                     <p class="title-item"> <a class="title-item-container" href="#">Перфоратор BOSCH BFG 6000</a></p>
+                     <img class="product-6000" src="img/bfg6000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
+                     <p class="title-item"> <a class="title-item-link" href="#">Перфоратор BOSCH BFG 6000</a></p>
                      <span class="price-item-crossed">30500 Р.</span>
                      <span class="price-product"><a class="price-product-container" href="#">25500 Р.</a></span>
                      <div class="hover-container-item">
@@ -263,65 +270,73 @@
                  </div>
                  <div class="product-item-container new-container">
                    <div class="product-item">
-                     <img src="img/bfg2000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
-                     <p class="title-item"> <a class="title-item-container" href="#">Перфоратор BOSCH BFG 2000</a></p>
+                     <img class="product-2000" src="img/bfg2000.jpg" alt="Перфоратор BOSCH" width="127" height="112">
+                     <p class="title-item"> <a class="title-item-link" href="#">Перфоратор BOSCH BFG 2000</a></p>
                      <span class="price-item-crossed"></span>
                      <span class="price-product"><a class="price-product-container" href="#">12500 Р.</a></span>
                      <div class="hover-container-item">
-                       <div class="buy"><a class="buy-product-link" href="#">Купить</a></div>
+                       <div class="buy"><a class="buy-product-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                        Купить</a></div>
                        <div class="bookmark"><a class="in-bookmarks-link" href="#">В закладки</a></div>
                      </div>
                    </div>
                  </div>
                  <div class="product-item-container new-container">
                    <div class="product-item">
-                     <img src="img/bfg3000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
-                     <p class="title-item"><a class="title-item-container" href="#">Перфоратор BOSCH BFG 3000</a></p>
+                     <img class="product-3000" src="img/bfg3000.jpg" alt="Перфоратор BOSCH" width="127" height="112">
+                     <p class="title-item"><a class="title-item-link" href="#">Перфоратор BOSCH BFG 3000</a></p>
                      <span class="price-item-crossed">22500 Р.</span>
                      <span class="price-product"><a class="price-product-container" href="#">15500 Р.</a></span>
                      <div class="hover-container-item">
-                       <div class="buy"><a class="buy-product-link" href="#">Купить</a></div>
+                       <div class="buy"><a class="buy-product-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                        Купить</a></div>
                        <div class="bookmark"><a class="in-bookmarks-link" href="#">В закладки</a></div>
                      </div>
                    </div>
                  </div>
                  <div class="product-item-container">
                    <div class="product-item">
-                     <img src="img/bfg6000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
-                     <p class="title-item"> <a class="title-item-container" href="#">Перфоратор BOSCH BFG 6000</a></p>
+                     <img class="product-6000" src="img/bfg6000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
+                     <p class="title-item"> <a class="title-item-link" href="#">Перфоратор BOSCH BFG 6000</a></p>
                      <span class="price-item-crossed">30500 Р.</span>
                      <span class="price-product"><a class="price-product-container" href="#">25500 Р.</a></span>
                      <div class="hover-container-item">
-                       <div class="buy"><a class="buy-product-link" href="#">Купить</a></div>
+                       <div class="buy"><a class="buy-product-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                        Купить</a></div>
                        <div class="bookmark"><a class="in-bookmarks-link" href="#">В закладки</a></div>
                      </div>
                    </div>
                  </div>
                  <div class="product-item-container new-container">
                    <div class="product-item">
-                     <img src="img/bfg2000.jpg" alt="Перфоратор BOSCH" width="144" height="128">
-                     <p class="title-item"> <a class="title-item-container" href="#">Перфоратор BOSCH BFG 2000</a></p>
+                     <img class="product-2000" src="img/bfg2000.jpg" alt="Перфоратор BOSCH" width="127" height="1124">
+                     <p class="title-item"> <a class="title-item-link" href="#">Перфоратор BOSCH BFG 2000</a></p>
                      <span class="price-item-crossed"></span>
                      <span class="price-product"><a class="price-product-container" href="#">12500 Р.</a></span>
                      <div class="hover-container-item">
-                       <div class="buy"><a class="buy-product-link" href="#">Купить</a></div>
+                       <div class="buy"><a class="buy-product-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                        Купить</a></div>
                        <div class="bookmark"><a class="in-bookmarks-link" href="#">В закладки</a></div>
                      </div>
                    </div>
                </div>
                <div class="container-list">
-                <ul>
-                  <li>
-                   <a class="page-list-item curent-page">1</a>
+                <ul class="pages-list">
+                  <li class="page-list-item">
+                   <a class="page-list-link curent-page">1</a>
                   </li>
-                  <li>
-                   <a class="page-list-item" href="#">2</a>
+                  <li class="page-list-item">
+                   <a class="page-list-link" href="#">2</a>
                   </li>
-                  <li>
-                   <a class="page-list-item" href="#">3</a>
+                  <li class="page-list-item">
+                   <a class="page-list-link" href="#">3</a>
                   </li>
-                  <li>
-                   <a class="page-list-item" href="#">Следующая </a>
+                  <li class="page-list-item">
+                   <a class="page-list-link" href="#">Следующая </a>
                   </li>
                 </ul>
               </div>
@@ -340,9 +355,9 @@
       <footer class="footer">
         <div class="footer-top">
           <div class="footer-top-container">
-            <a href="#" class="logo-container"><span class="visually-hidden">Техномарт</span>
-              <img src="img/logo-technomart.png" alt="Техномарт" class="logo-img" width="108" height="17">
-            </a>
+			   <a href="#" class="logo-container footer-logo"><span class="visually-hidden">Техномарт</span>
+                <img src="img/logo-technomart.png" alt="Техномарт" class="logo-img" width="138" height="23">
+               </a>
              <div class="footer-info">
                <ul class="footer-info-container">
                  <li class="footer-info-item">
