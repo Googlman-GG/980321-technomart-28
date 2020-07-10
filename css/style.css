@@ -1737,11 +1737,12 @@ input[type="radio"].visually-hidden {
 
 .popup-order {
   width: 620px;
+  height: 430px;
   position: fixed;
-  top: 580px;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 2100px;
+  bottom: 0;
   margin: auto;
   display: none;
   z-index: 100;
