@@ -1787,6 +1787,7 @@ img {
 .popup-order {
   width: 620px;
   height: 430px;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
