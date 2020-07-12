@@ -67,3 +67,13 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (mapPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+      mapPopup.classList.remove("modal-error");
+    }
+  }
+});
