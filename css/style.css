@@ -57,7 +57,7 @@
 }
 body {
   min-width: 960px;
-  font-family: "PT Sans", "Cuprum", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--black);
@@ -285,6 +285,7 @@ img {
   margin-left: 48px;
 }
 .user-name-container {
+  padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,10 +296,11 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 17px;
+
   background-color: var(--white);
 }
 .user-name-container svg {
+  margin: 0px 17px;
   fill: var(--basic-greylight);
 }
 .user-name-container svg:hover {
